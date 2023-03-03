@@ -1,0 +1,20 @@
+#server:
+#  port: 8090
+
+#  配置对象类型数据
+person:
+  name: zs
+  age: 12
+  sex: 男
+#或者写成json格式
+person2: {name: zs,age: 19 }
+
+#[3]配置数组类型
+
+city:
+  - beijing
+  - tianjin
+  - shanghai
+  - chongqing
+#或者
+city2: [beijing,tianjin,shanghai,chongqing]

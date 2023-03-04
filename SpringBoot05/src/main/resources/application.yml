@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot2
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mytestdb?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: xiaoren124
+
+mybatis:
+  type-aliases-package: com.xiaoren.pojo
+#  如果映射文件名字与.xml的包名不一致需要配置
+  mapper-locations: classpath:mybatis/*.xml

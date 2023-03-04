@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    context-path: /springboot6
+#  main:
+#    allow-circular-references: true解决循环依赖问题
+
+
+
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mytestdb?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: xiaoren124
+
+
+
+mybatis:
+  type-aliases-package: com.xiaoren.pojo
+  mapper-locations: classpath:mybatis/*.xml

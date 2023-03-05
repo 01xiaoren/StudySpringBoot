@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://cxf.apache.org/bindings/th">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+this is templates do,,,,,
+<!--th:text属性-->
+<span th:text="passpage"></span><br/>
+<!--从域中根据参数名取出参数值放在双标签中-->
+<!--/*@thymesVar id="msg" type=""*/-->
+<span th:text="${msg}"></span><br/>
+
+<!--th:value-->
+
+<input th:value="自定义">
+<input th:value="${msg}">
+</body>
+</html>
